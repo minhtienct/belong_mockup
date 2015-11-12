@@ -1,0 +1,120 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('｜持ち物チェックアプリ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this
+            ->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => '#'))
+            ->prependStylesheet(array('rel' => 'icon', 'href' => $this->basePath() .'/img/login_favicon.ico'))
+            ->prependStylesheet($this->basePath() . '/css/style.css')
+            ->prependStylesheet($this->basePath() . '/css/style-layout.css')
+            ->prependStylesheet($this->basePath() . '/css/checkbox-x.min.css')
+            ->prependStylesheet($this->basePath() . '/css/checkbox-x.css')
+            ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+            ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+            ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.css')
+            ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+            ->prependStylesheet($this->basePath() . '/css/datepicker3.css')
+        ?>
+
+        <!-- Scripts -->
+        <?php
+        echo $this->headScript()
+            ->prependFile($this->basePath() . '/js/jQueryAutoHeight.js')
+            ->prependFile($this->basePath() . '/js/checkbox-x.min.js')
+            ->prependFile($this->basePath() . '/js/checkbox-x.js')
+            ->prependFile($this->basePath() . '/js/bootstrap.js')
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            ->prependFile($this->basePath() . '/js/locales/bootstrap-datepicker.ja.js')
+            ->prependFile($this->basePath() . '/js/bootstrap-datepicker.js')
+            ->prependFile($this->basePath() . '/js/jquery.min.js')
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!--Custom scripts-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.dropdown-toggle').dropdown();
+            });
+        </script>
+    </head>
+    <body class="body-layout">
+        <!--Header content-->
+        <?php
+        $loginHelper = $this->LoginInfoHelper();
+        ?>
+        <div id="headerNav" class="container">
+            <div class="col-sm-1 nav-right">
+                <div class="text-right">
+                    <img src="<?= $this->basePath() . '/img/logo.gif' ?>" style="height: 35px;"/>
+                </div>
+            </div>
+            <div class="col-sm-8 text-right" style="padding-left: 7px;">
+
+                <div id="headerNavMiddle">
+                    <span><?= isset($loginHelper) ? sprintf('%s(ID:%s)', $loginHelper->getFacilityName(), $loginHelper->getFacilityId()) : '' ?></span>
+                </div>
+            </div>
+            <div id="headerNavRight" class="col-sm-2 nav-right">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span><?= isset($loginHelper) ? $loginHelper->getOwnerName() : '' ?></span>
+                </a>
+                <ul class="dropdown-menu dropdown-header-custom">
+                    <li>
+                        <a href="<?= $this->url('facility', array('action' => 'update')) ?>">
+                            <span>事業所情報</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $this->url('password', array('action' => 'changePassword')) ?>">
+                            <span>パスワード変更</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $this->url('home', array('action' => 'logout')) ?>">
+                            <span>ログアウト</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Main content-->
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="col-md-10">
+                        <div class="navbar-header text-center">
+                            <a title="利用者一覧" class="navbar-brand" href="<?= $this->url('customer') ?>">
+                                <img alt="利用者一覧" src="/img/user.png"  height="76px">
+                                <span class="navbar-custom-text">利用者一覧</span>
+                            </a>
+                            <a title="持ち物" class="navbar-brand" href="<?= $this->url('things') ?>">
+                                <img alt="持ち物一覧" src="/img/things.png"  height="76px">
+                                <span class="navbar-custom-text">持ち物一覧</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <?php
+            echo $this->navigation('navigation')->breadcrumbs()->setMinDepth(0)
+                ->setPartial('layout/breadcrumb.phtml');
+            echo $this->content;
+            ?>
+            <hr>
+        </div>
+    </body>
+</html>

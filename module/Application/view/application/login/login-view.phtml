@@ -1,0 +1,58 @@
+<div class="text-center">
+    <img src="/img/login.png" border="0" alt="持ち物チェックアプリ">
+</div>
+<div class="text-center">
+    <h1>持ち物チェックアプリ</h1>
+</div>
+<p class="text-center">
+    <span class="label label-danger"><?php echo (isset($this->msg)) ? $this->translate($this->msg) : ''; ?></span>
+</p>
+<?php
+//:::: Head title
+$appHelper = $this->ApplicationHelper();
+$this->headTitle($appHelper->getHeadTitle('Application\Login\LoginView'));
+
+$form = $this->loginFrm;
+$form->setAttribute('action', $this->url(null, array('controller' => 'login', 'action' => 'loginView')));
+$form->setAttribute('class', 'form-horizontal');
+$form->prepare();
+?>
+<div class="row">
+    <div class="text-right login-container">
+        <?= $this->form()->openTag($form) ?>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="loginName">ID</label>
+            <div class="col-sm-8">
+                <?=
+                $this->formRow($form->get('login_name')
+                        ->setAttribute('class', 'form-control'))
+                ?>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="loginPw">パスワード</label>
+            <div class="col-sm-8">
+                <?=
+                $this->formRow($form->get('login_password')
+                        ->setAttribute('class', 'form-control'))
+                ?>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-11 text-right">
+                <?=
+                $this->formRow($form->get('login_submit')
+                        ->setAttribute('class', 'btn btn-lg btn-primary'))
+                ?>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-11 text-right">
+                <p>
+                    <a href="<?= $this->url('password', array('action' => 'password_reset')) ?>">パスワードを忘れた場合</a>
+                </p>
+            </div>
+        </div>
+        <?= $this->form()->closeTag() ?>
+    </div>
+</div>

@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-05 19:30-0700\n"
+"PO-Revision-Date: 2015-06-22 13:42+0700\n"
+"Last-Translator: Tran Huu Tho <ththo59@gmail.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "エラーが発生しました"
+
+#: ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr "追加の情報"
+
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr "ファイル"
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "メッセージ"
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43 ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr "スタックトレース"
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "前の例外"
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "例外が利用できません"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "404エラーが発生しました"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "要求されたコントローラはリクエストをディスパッチできませんでした"
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "要求されたコントローラは存在するコントローラクラスにマッピングできませんでした"
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "要求されたコントローラはディスパッチ不可能でした"
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "要求されたURLはルーティングにマッチしませんでした"
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "404が生成された理由について現時点で判断できません"
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "コントローラ"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "%s に解決"
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr "例外"
+
+# Please upload the image of less than file size %size%
+msgid "Please upload the image of less than file size %size%"
+msgstr "ファイルサイズ%size%未満の画像をアップロードしてください"
+
+# Common
+msgid "CMN_001"
+msgstr "アクセス権限がありません"
+
+msgid "CMN_002"
+msgstr "管理者にお問い合わせください"
+
+msgid "CMN_003"
+msgstr "データ更新が失敗しました"
+
+msgid "CMN_004"
+msgstr "数字を入力してください"
+
+msgid "CMN_005"
+msgstr "正しいフォーマットで入力してください"
+
+msgid "CMN_006"
+msgstr "入力値が不正です"
+
+msgid "CMN_007"
+msgstr "データ更新されました"
+
+# Combo box empty select
+msgid "CMN_008"
+msgstr "選択してください"
+
+# Please enter the correct threshold
+msgid "CMN_009"
+msgstr "正しい閾値を入力してください"
+
+# input data is not empty
+msgid "CMN_010"
+msgstr "Input data is not empty"
+
+# get data failed
+msgid "CMN_011"
+msgstr "Get data failed"
+
+# date start and date end is not match
+msgid "CMN_012"
+msgstr "正しい日付範囲を指定してください"
+
+# Insert time greater than date current .
+msgid "CMN_013"
+msgstr "未来日付が登録できません"
+
+# please input
+msgid "%subject% is required and can't be empty"
+msgstr "%subject%を入力してください"
+
+# Login fail message
+msgid "APPLICATION_001"
+msgstr "ログインID、もしくはパスワードが一致しないため、ログインできません。"
+
+# Login Id empty message
+msgid "APPLICATION_002"
+msgstr "ログインIDが未入力です"
+
+# Login password empty message
+msgid "APPLICATION_003"
+msgstr "パスワードが未入力です"
+
+# Authentication info not accepted
+msgid "APPLICATION_004"
+msgstr "登録されていない端末もしくは有効なアクセストークンではありません。"
+
+# Password too short
+msgid "APPLICATION_005"
+msgstr "Password too short"
+
+# Old password not correct
+msgid "APPLICATION_006"
+msgstr "現在パスワードが間違っています"
+
+# Confirm password not match
+msgid "APPLICATION_007"
+msgstr "新パスワードと新パスワードの確認の値が一致しません"
+
+# Password setting: HashKey is mot match.
+msgid "APPLICATION_008"
+msgstr ""
+"アクセス情報が間違っています。または、有効期限が切れました。パスワードリセット画面から"
+"やり直してください。"
+
+# Password reset: Facility is not match.
+msgid "APPLICATION_009"
+msgstr "入力された事業所IDは登録されていません。入力したIDを確認してください。"
+
+# Password reset: sent a link to the password change screen to registered email address..
+msgid "APPLICATION_010"
+msgstr "登録されているメールアドレスにパスワード変更画面へのリンクを送信しました。"
+
+# Password reset: sent mail failed
+msgid "APPLICATION_011"
+msgstr "メール送信に失敗しました。管理者に問い合わせください。"
+
+# Password Change success.
+msgid "APPLICATION_012"
+msgstr "パスワードの変更が完了しました。"
+
+# Login: please input alpha, numeric, @.
+msgid "APPLICATION_013"
+msgstr "英数字と記号で入力ください"
+
+# Module Facility
+msgid "FACILITY_001"
+msgstr "事業所名称が未入力です"
+
+# Module Floor
+msgid "FLOOR_001"
+msgstr "フロアIDが未入力です"
+
+msgid "FLOOR_002"
+msgstr "フロア名が未入力です"
+
+msgid "FLOOR_003"
+msgstr "有効を選択してください"
+
+msgid "FLOOR_004"
+msgstr "フロアIDと所属が重複しています"
+
+# Module Staff
+msgid "STAFF_001"
+msgstr "職員IDが未入力です"
+
+msgid "STAFF_002"
+msgstr "職員姓名が未入力です"
+
+msgid "STAFF_003"
+msgstr "在籍を選択してください"
+
+msgid "STAFF_004"
+msgstr "職員IDと所属が重複しています"
+
+msgid "STAFF_005"
+msgstr "職員名前が未入力です"
+
+# Module Settings
+msgid "SETTING_001"
+msgstr "血圧低閾値は数字で入力してください"
+
+msgid "SETTING_002"
+msgstr "血圧低閾値は三桁以内で入力してください"
+
+msgid "SETTING_003"
+msgstr "血圧高閾値は数字で入力してください"
+
+msgid "SETTING_004"
+msgstr "血圧高閾値は三桁以内で入力してください"
+
+# Web api method not supported
+msgid "WEBAPI_001"
+msgstr "指定されたサービスメソッドが存在しません"
+
+# Web api access token not valid
+msgid "WEBAPI_002"
+msgstr "登録されていない端末もしくは有効なアクセストークンではありません。"
+
+# Web api params not accepted
+msgid "WEBAPI_003"
+msgstr "指定引数が認識されていません"
+
+# Web api register user info data not valid
+msgid "WEBAPI_004"
+msgstr "利用者情報が不正"
+
+# Web api send mail error
+msgid "WEBAPI_005"
+msgstr "メール送信が失敗しました"
+
+# Web api user progress save failed
+msgid "WEBAPI_006"
+msgstr "Failed to save user progress data"
+
+# Module User (Admission)
+msgid "ADMISSION_001"
+msgstr "正しい期間を入力してください"
+
+# Module User (Admission)
+msgid "ADMISSION_002"
+msgstr "期間が重複しています"
+
+# Module User (Admission)
+msgid "ADMISSION_003"
+msgstr "期間が重なっています"
+
+# Admission user: Duplicate date start
+msgid "ADMISSION_004"
+msgstr "入所日が重複しています"
+
+# Admission user: Duplicate date end
+msgid "ADMISSION_005"
+msgstr "退所日が重複しています"
+
+# User user photo type not allowed
+msgid "USER_001"
+msgstr "画像種類はPNG, JPG, GIFでアップロードしてください"
+
+# User user photo size not allowed
+msgid "USER_002"
+msgstr "画像サイズが大きすぎています"
+
+# User birth date must be before current day
+msgid "USER_003"
+msgstr "生年月日は未来日付入力できません"
+
+# User family name can not empty
+msgid "USER_004"
+msgstr "Family name can not empty."
+
+# User family relation can not empty
+msgid "USER_005"
+msgstr "Family relation can not empty."
+
+# User end certification date can not before start certification date
+msgid "USER_006"
+msgstr "認定の有効期間を正しく入力してください"
+
+# User record time can not empty
+msgid "USER_007"
+msgstr "Please input record time."
+
+# User phone number format not valid
+msgid "USER_008"
+msgstr "Phone number format not valid."
+
+# User birth date can not be empty
+msgid "USER_009"
+msgstr "Please input birth date."
+
+# User medical name can not be empty
+msgid "USER_010"
+msgstr "Please input medical name."
+
+# print date
+msgid "USER_011"
+msgstr "印刷対象日を正しく入力してください"
+
+msgid "USER_012"
+msgstr "改めて写真をあげてください"
+
+# Report print date number too great
+msgid "USER_013"
+msgstr "日以内に選択してください"
+
+# Customer
+msgid "CUSTOMER_001"
+msgstr "数量は1以上を入力してください"
+
+# Customer
+msgid "CUSTOMER_002"
+msgstr "チェック済"
+
+# Customer
+msgid "CUSTOMER_003"
+msgstr "チェック未完了"
+
+# Customer : can not create PDF.
+msgid "CUSTOMER_004"
+msgstr "対象データが見つかりません"
+
+# Thing image has not been selected.
+msgid "CUSTOMER_005"
+msgstr "画像が選択されていません"
+
+# Customer: Confirm time greater than insert time.
+msgid "CUSTOMER_006"
+msgstr "確認終了日は登録日以降の日付を入力してください"
+
+# Customer: Insert Staff is not empty.
+msgid "CUSTOMER_007"
+msgstr "確認者を入力してください"
+
+# Thing: confirm time is not empty.
+msgid "CUSTOMER_008"
+msgstr "確認日を入力してください"
+
+# Thing: confirm staff is not empty.
+msgid "CUSTOMER_009"
+msgstr "確認者を入力してください"
+
+# Thing: Thing greater customer insert time.
+msgid "CUSTOMER_010"
+msgstr "持ち物の登録日は利用者の登録日以降の日付を入力してください"
+
+# Thing: In order to exceed the upload many files, you can not upload
+msgid "CUSTOMER_011"
+msgstr "持ち物の登録数は%number%を超えないようにしてください。"
+
+# Thing: In order to exceed the upload possible file size, you can not upload
+msgid "CUSTOMER_012"
+msgstr "事業所で登録する、画像の合計サイズは%size%を超えないようにしてください。"
+
+# Thing: In order to exceed the upload possible file size, you can not upload (iPhone)
+msgid "CUSTOMER_013"
+msgstr "アップロード可能なファイルサイズを超えるため、アップロードできません。"
