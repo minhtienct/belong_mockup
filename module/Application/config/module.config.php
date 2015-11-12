@@ -25,6 +25,8 @@ return array(
                     ),
                 ),
             ),
+            
+            
             'password' => array(
                 'type' => 'segment',
                 'options' => array(
